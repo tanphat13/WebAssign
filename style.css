@@ -1,0 +1,12 @@
+body{
+    width: 600px;
+    position: static;
+    
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+    text-align: right;
+    height: 100px;
+    width: inherit;
+}
