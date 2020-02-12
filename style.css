@@ -89,6 +89,7 @@ main, footer {
     height: 30px;
     margin: 10px 0px;
     padding: 2px;
+    border-radius: 5px;
 }
 
 footer {
@@ -111,4 +112,34 @@ footer {
 .footer-nav li {
     display: inline-block;
     margin-right: 20px;
+}
+
+.feature-container {
+    margin: 0px auto;
+    width: inherit;
+    display: inline-block;
+}
+
+.icon-element {
+    margin: 10px 30px;
+    width: 10%;
+    display: inline-block;
+    /* border: 2px solid black; */
+}
+
+.icon-element img {
+    width: 50px;
+    color: cyan;
+}
+
+.info {
+    float: right;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.info p {
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 600;
 }
