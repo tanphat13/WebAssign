@@ -16,46 +16,50 @@ html{
 /*----------------------------------------------------------------*/
 header{
     position: fixed;
+    display: flex;
+    flex-direction: row;
     top: 0;
     left: 0;
     width: 100%;
+    max-height: 50px;
     padding-left: 10px;
     background-color: #00c7b3;
     z-index: 1;
 }
 
 .logo {
-    position: relative;
     width: 200px;
     float: left;
-    margin-top: 15px;
+    margin: 14px 0px;
 }
 
 .main-nav {
-    position: relative;
-    float: right;
     list-style: none;
-    margin-top: 10px;
-    padding-bottom: 20px;
-    width: 600px;
+    margin-left: 300px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-nav li {
+    padding: 0px;
+    max-height: 50px;
 }
 
 .main-nav li a {
+    display: inline-block;
     text-decoration: none;
     color: black;
+    width: 100%;
     font-size: 80%;
     font-weight: 400;
-    padding: 20px 100px 20px 5px;
+    padding: 15px 50px;
 }
 
 .main-nav li a:hover {
     background-color: #35a79c;
 }
 
-.main-nav li {
-    display: inline-block;
-    margin-right: 0px;
-}
 
 .clearfix::after {
     content: " ";
@@ -67,17 +71,22 @@ header{
 main, footer {
     position: relative;
     margin: 20px 25%;
-    max-width: 800px;
+    max-width: 850px;
     /* border: 5px solid #000000; */
 }
 
 .row {
     width: 450px;
-    margin: 0 auto;
+    margin: 20px auto;
     align-items: center;
     margin-bottom: 50px;
     position: relative;
     top: 50px;
+}
+
+.row .heading {
+    margin: 10px auto;
+    align-content: center;
 }
 
 .row input {
@@ -85,19 +94,17 @@ main, footer {
     margin-top: 20px;
     width: 250px;
     padding: 5px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
+    margin: 20px auto;
 }
 
 #button {
+    display: block;
     background-color: #51beb3;
     font-size: 13px;
     font-weight: 750;
     width: 100px;
     height: 30px;
-    margin: 10px 0px;
+    margin: 20px auto;
     padding: 2px;
     border-radius: 5px;
 }
@@ -107,6 +114,7 @@ footer {
     font-size: 80%;
     font-weight: 400;
     padding: 20px;
+    margin-top: 50px;
 }
 
 .footer-nav {
@@ -172,13 +180,13 @@ iframe {
     width: 100%;
     margin: 0 auto;
     margin-top: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .price-element {
     width: 30%;
     float: left;
-    margin: 0 10px;
+    margin: 0 11px;
     border: 1px solid black;
     text-align: center;
     border-radius: 5px;
